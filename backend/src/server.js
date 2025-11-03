@@ -70,8 +70,7 @@ app.use(
   cors({
     credentials: true,
     origin: [
-      'http://localhost:3000', // dev frontend
-      'https://your-production-site.vercel.app', // change this later
+      'https://food-website-cp9b.onrender.com', // change this later
     ],
   })
 );

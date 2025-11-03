@@ -6,8 +6,12 @@
 import axios from "axios";
 
 //  Base URL for backend
+
 axios.defaults.baseURL =
-  process.env.NODE_ENV !== "production" ? "http://localhost:5000" : "/";
+  process.env.NODE_ENV !== 'production'
+    ? 'http://localhost:5000'
+    : 'https://food-website-cp9b.onrender.com';
+
 
 //  Automatically attach token to every request
 axios.interceptors.request.use((config) => {
